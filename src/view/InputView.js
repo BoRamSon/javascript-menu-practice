@@ -10,9 +10,9 @@ const InputView = {
     return removeSpace(inputCoachNames);
   },
 
-  async readDontEatMenu() {
+  async readDontEatMenu(coachName) {
     const inputDontEatMenu = await MissionUtils.Console.readLineAsync(
-      INPUT_MESSAGES.inputDontEatMenu
+      `${coachName}${INPUT_MESSAGES.inputDontEatMenu}`
     );
     return removeSpace(inputDontEatMenu);
   },
