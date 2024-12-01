@@ -2,19 +2,19 @@ import { MissionUtils } from '@woowacourse/mission-utils';
 import OUTPUT_MESSAGES from '../constants/outputMessages.js';
 
 const OutputView = {
-  async printGreeting() {
+  printGreeting() {
     MissionUtils.Console.print(OUTPUT_MESSAGES.greeting);
   },
 
-  async printMenuResult() {
+  printMenuResult() {
     MissionUtils.Console.print(OUTPUT_MESSAGES.menuResult);
   },
 
-  async printError(error) {
+  printError(error) {
     MissionUtils.Console.print(error);
   },
 
-  async printSpace() {
+  printSpace() {
     MissionUtils.Console.print('');
   },
 };
