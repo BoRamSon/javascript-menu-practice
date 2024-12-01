@@ -1,3 +1,4 @@
+import InputCoachNames from './module/InputCoachNamesModule.js';
 import PrintGreeting from './module/PrintGreetingModule.js';
 
 const SAMPLE = {
@@ -10,15 +11,12 @@ const SAMPLE = {
 
 class App {
   constructor() {
-    this.printGreeting = new PrintGreeting();
+    this.inputCoachNames = new InputCoachNames();
   }
 
-  play() {
-    this.printGreeting;
-  }
-
-  print() {
-    //
+  async play() {
+    new PrintGreeting();
+    const coachNamesArray = await this.inputCoachNames.run();
   }
 }
 
