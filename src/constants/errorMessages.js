@@ -11,7 +11,7 @@ const ERROR_MESSAGES = {
   negativeNumber: createMsg('음수가 입력될 수 없습니다.'),
   limitDigits: createMsg('각각 코치 이름은 2글자부터 4글자까지 입력 가능합니다.'),
   minimumTwoDigit: createMsg('최소 인원 2명이 되어야 합니다.'),
-  NAME2: createMsg(''),
+  isInMenu: createMsg('메뉴상에 없는 메뉴입니다.'),
   NAME3: createMsg(''),
 };
 
